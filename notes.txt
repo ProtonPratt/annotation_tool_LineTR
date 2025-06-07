@@ -1,0 +1,29 @@
+Digital_Image_of_the_Arachalur_Cave_Game_Board_sculpture_04.png - No text present in the image (arnavs's 52nd image)
+Digital_Image_with_texture_of_the_Tamatakal_500CE_Gunamadhura_Prashasti_Inscription.png - there are 2 images one of them that is this one is natural and should be removed from training
+Digital_Image_Obtained_by_3D_Scanning_of_The_Marasuru_madivala_Chamundi_sculpture_01.png - 69(pratyush) no text
+Digital_Image_of_the_Agara_1363CE_Kamaiya_Nayaka_27s_Donation_Inscription_-_Back.png -- hard
+Digital_Image_of_the_Marasuru_Madivala_9th-century_Puniseyamma_Hero-stone.png -- to be removed from training (already better version exist)
+Digital_Image_with_texture_of_the_Tamatakal_500CE_Gunamadhura_Prashasti_Inscription.png -- better version exits
+Digital_Image_of_the_Marasuru_Madivala_9th-century_Puniseyamma_Hero-stone.png -- better exits too hard (delete)
+Digital_Image_of_the_Katigenahalli_1348CE_Donation_Inscription.png
+Kalya_1368CE_Bukkarya_Jain_SriVaishanava_Reconciliation_Inscription.png - Repeat of (Digital_image_obtained_by_3D_scanning_of_the_Kalya_1368CE_Bukkaraya_Kannada_Inscription_03.png) and (Digital_image_obtained_by_3D_scanning_of_the_Kalya_1368CE_Bukkaraya_Kannada_Inscription_01.png)
+
+Digital_Image_of_the_Tamatakal_500CE_Gunamadhura_Prashasti_Inscription_03.png - present in pratyush and vaibhav
+Digital_image_obtained_by_3D_scanning_of_The_Beguru_Bengaluru_900CE_Kannada_Inscription.png - The text is already marked
+Digital_Image_Obtained_by_3D_Scanning_of_The_Jakkur_1342CE_Honnamaraya_nayka_Kannada_Inscriptio.png - present in vaibhav and amal
+Digital_Image_of_the_Kalya_1368CE_Bukkaraya_27s_Jain_SriVaishanava_Reconciliation_Inscription_ - something wrong with the image
+Digital_Image_Obtained_by_3D_Scanning_of_the_Tamatakal_500CE_Gunamadhura_Prashasti_Inscription_ - present in amal and pratyush
+Digital_image_obtained_by_3D_scanning_of_the_Kalya_1368CE_Bukkaraya_Kannada_Inscription_04 - present in aarnav and pratyush
+Digital_Image_Obtained_by_3D_Scanning_of_The__22Bengaluru_22_Nagatara_900CE_Stone_Inscription_A - wierd color
+Digital_images_of_the_Mangaluru_1423CE_Donation_Inscription_03 - both in pratyush and arnavs
+Digital_image_of_The_Tamatakal_500CE_Gunamadhura_Herostone_01.png - present in pratyush and arnavs prefer arnavs
+Bannerughatta_1383CE_VeeraBukkana_Vodeya_Damodara_Temple_Donation_Inscription.png and Bannerughatta_1362CE_Mallapa_Damodara_Temple_Donation_Inscription.png are same arnav and pratyush
+Kalya_1600CE_Devisetti_Inscription.png - present in amal and arnav`
+Digital_Image_obtained_by_3D_scanning_of_the_Hebbala_750CE_Kittaya_Herostone_with_a_Kannada_Ins - wong color
+
+
+
+Images removed from the traning set -
+        "Digital_Image_with_texture_of_the_Tamatakal_500CE_Gunamadhura_Prashasti_Inscription.png",
+        "Kalya_1368CE_Bukkarya_Jain_SriVaishanava_Reconciliation_Inscription.png",
+        "Digital_image_obtained_by_3D_scanning_of_the_Kalya_1368CE_Bukkaraya_Kannada_Inscription_01.png"

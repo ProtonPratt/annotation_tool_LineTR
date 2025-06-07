@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Annotator</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        .container { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        ul { list-style-type: none; padding: 0; }
+        li {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .annotator-link {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 1.2em;
+            /* padding: 8px 12px; */
+            /* border: 1px solid #007bff; */
+            /* border-radius: 4px; */
+            /* display: inline-block; */
+            transition: color 0.3s;
+        }
+        .annotator-link:hover {
+            color: #0056b3;
+        }
+        .stats {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+        }
+        .stats span { margin-right: 10px; }
+        .stats .completed { color: green; }
+        .stats .partial { color: orange; }
+        .stats .pending { color: red; }
+        .flash { padding: 10px; margin-bottom: 15px; border-radius: 4px; }
+        .flash.error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .flash.success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .flash.info { background-color: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Annotator Dashboard</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="flash {{ category }}">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+        <ul>
+            {% for annotator_info in annotators_info %}
+            <li>
+                <a href="{{ url_for('annotator_page', annotator_name=annotator_info.name) }}" class="annotator-link">{{ annotator_info.name }}</a>
+                <div class="stats">
+                    <span>Total Assigned: {{ annotator_info.stats.total }}</span><br>
+                    <span class="completed">Completed (Both): {{ annotator_info.stats.completed }}</span><br>
+                    <span class="partial">Partial (XCF only): {{ annotator_info.stats.partial_xcf }}</span><br>
+                    <span class="partial">Partial (Mask only): {{ annotator_info.stats.partial_mask }}</span><br>
+                    <span class="pending">Pending (Neither): {{ annotator_info.stats.pending }}</span>
+                </div>
+            </li>
+            {% else %}
+            <li>No annotators configured or no assignments found.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
